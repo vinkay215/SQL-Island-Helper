@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "SQL Island Helper",
+  "version": "1.7.1",
+  "description": "A lightweight SQL Island companion for viewing exercise hints, managing shortcuts, and working with SQL answers. © NguyenQuocVinh",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://sql-island.informatik.uni-kl.de/*",
+    "http://sql-island.informatik.uni-kl.de/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sql-island.informatik.uni-kl.de/*",
+        "http://sql-island.informatik.uni-kl.de/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "page.js"
+      ],
+      "matches": [
+        "https://sql-island.informatik.uni-kl.de/*",
+        "http://sql-island.informatik.uni-kl.de/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "SQL Island Helper",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "author": "Nguyen Quoc Vinh",
+  "homepage_url": "https://github.com/vinkay215"
+}

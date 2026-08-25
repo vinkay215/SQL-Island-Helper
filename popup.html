@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SQL Island Helper Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <div class="header">
+      <div>
+        <h1>SQL Island Helper</h1>
+        <p>Shortcut Settings</p>
+      </div>
+    </div>
+
+    <div class="setting">
+      <div class="label">
+        <strong>Hiện / Ẩn menu</strong>
+        <span>Mặc định Ctrl+B</span>
+      </div>
+      <button class="shortcut" data-setting="shortcutMenu">Ctrl+B</button>
+    </div>
+
+    <div class="setting">
+      <div class="label">
+        <strong>Gán đáp án</strong>
+        <span>Mặc định Ctrl+N</span>
+      </div>
+      <button class="shortcut" data-setting="shortcutAssign">Ctrl+N</button>
+    </div>
+
+    <div class="setting">
+      <div class="label">
+        <strong>Copy đáp án</strong>
+        <span>Mặc định Ctrl+M</span>
+      </div>
+      <button class="shortcut" data-setting="shortcutCopy">Ctrl+M</button>
+    </div>
+
+    <div id="status">Bấm vào một phím tắt để thay đổi.</div>
+
+    <div class="actions">
+      <button id="reset">Khôi phục mặc định</button>
+    </div>
+  <footer style="padding:12px;text-align:center;font-size:11px;color:#94a3b8;">© 2026 NguyenQuocVinh. All rights reserved.</footer>    <footer style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,255,255,.08);text-align:center;font-size:11px;color:#94a3b8;">
+      © 2026 Nguyen Quoc Vinh
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

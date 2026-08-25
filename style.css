@@ -1,0 +1,111 @@
+#sia-panel {
+  position: fixed;
+  left: 18px;
+  top: 18px;
+  z-index: 2147483647;
+  width: 390px;
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.35);
+  font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+#sia-panel * { box-sizing: border-box; }
+
+.sia-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 13px;
+  background: rgba(255,255,255,.06);
+}
+
+#sia-collapse {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#sia-body { padding: 12px; }
+#sia-body.sia-hidden { display: none; }
+
+.sia-section {
+  margin-bottom: 12px;
+}
+
+.sia-title {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: .72;
+}
+
+.sia-question {
+  max-height: 115px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 8px;
+  background: #0b1220;
+  white-space: pre-wrap;
+}
+
+#sia-answer {
+  width: 100%;
+  min-height: 135px;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 8px;
+  background: #0b1220;
+  color: #fff;
+  outline: none;
+  font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+#sia-status {
+  padding: 8px 9px;
+  border-radius: 7px;
+  background: rgba(239,68,68,.16);
+}
+
+#sia-status[data-ok="1"] {
+  background: rgba(34,197,94,.16);
+}
+
+.sia-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.sia-actions button {
+  flex: 1;
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#sia-fill {
+  background: #22c55e;
+  color: #052e16;
+}
+
+#sia-copy {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.sia-actions button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
+
+#sia-panel.sia-panel-hidden { display: none !important; }
